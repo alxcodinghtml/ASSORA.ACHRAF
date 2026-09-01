@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASSORA ✦ | Accessories • Style • Elegance</title>
+  <meta name="description" content="ASSORA ✦ Accessories • Style • Elegance. Details that make the difference. Delivery all over Morocco. Order via DM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #D4AF37;
+      --gold-light: #F5E6C8;
+      --gold-dark: #B8860B;
+      --black: #0a0a0a;
+      --black-soft: #141414;
+      --black-card: #1a1a1a;
+      --noise: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+      --text: #f5f5f5;
+      --text-muted: #a0a0a0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--black);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: var(--noise);
+      opacity: 0.04;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    header {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+    }
+
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.9rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: var(--gold);
+    }
+
+    .logo img {
+      height: 52px;
+      width: 52px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.35);
+    }
+
+    .logo-text {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      position: relative;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--gold); }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--gold);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after { width: 100%; }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .cart-btn {
+      position: relative;
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .cart-btn:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -4px; right: -4px;
+      background: var(--gold);
+      color: var(--black);
+      font-size: 0.7rem;
+      font-weight: 700;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--gold);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 1.5rem 4rem;
+      background: 
+        linear-gradient(to bottom, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.85) 100%),
+        url('https://i.postimg.cc/pL453RkG/Gemini-Generated-Image-wtq6mpwtq6mpwtq6.jpg') center/cover no-repeat;
+    }
+
+    .hero-content { max-width: 800px; z-index: 2; }
+
+    .hero-logo {
+      width: 130px; height: 130px;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      box-shadow: 0 0 40px rgba(212, 175, 55, 0.4);
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.8rem, 8vw, 4.5rem);
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+      line-height: 1.1;
+    }
+
+    .hero .tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      color: var(--gold-light);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 2rem;
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .btn:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+    }
+
+    section { padding: 5rem 1.25rem; }
+    .container { max-width: 1280px; margin: 0 auto; }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .divider {
+      width: 60px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      margin: 1rem auto;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .category-card {
+      position: relative;
+      height: 240px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      transition: all 0.4s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    }
+
+    .category-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+
+    .category-card:hover img { transform: scale(1.08); }
+
+    .category-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+      display: flex;
+      align-items: flex-end;
+      padding: 1.25rem;
+    }
+
+    .category-overlay h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .filter-btn {
+      padding: 0.5rem 1.25rem;
+      background: transparent;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--gold);
+      color: var(--black);
+      border-color: var(--gold);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .product-card {
+      background: var(--black-card);
+      border: 1px solid rgba(212, 175, 55, 0.12);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.35s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      border-color: rgba(212, 175, 55, 0.4);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    }
+
+    .product-img {
+      position: relative;
+      height: 260px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .product-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .product-card:hover .product-img img { transform: scale(1.06); }
+
+    .product-badge {
+      position: absolute;
+      top: 12px; left: 12px;
+      background: var(--gold);
+      color: var(--black);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .product-info {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-category {
+      font-size: 0.75rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.35rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .product-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .product-actions { margin-top: auto; }
+
+    .btn-add {
+      width: 100%;
+      padding: 0.7rem;
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: all 0.25s;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .btn-add:hover { background: var(--gold-light); }
+
+    .cart-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s;
+    }
+
+    .cart-overlay.open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cart-sidebar {
+      position: fixed;
+      top: 0; right: 0;
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      background: var(--black-soft);
+      z-index: 2001;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .cart-sidebar.open { transform: translateX(0); }
+
+    .cart-header {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cart-header h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      font-weight: 600;
+    }
+
+    .close-cart {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .close-cart:hover { color: var(--gold); }
+
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem 1.5rem;
+    }
+
+    .cart-empty {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+    }
+
+    .cart-item {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .cart-item img {
+      width: 70px; height: 70px;
+      object-fit: cover;
+      border-radius: 6px;
+      background: #111;
+    }
+
+    .cart-item-info { flex: 1; }
+
+    .cart-item-name {
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+    }
+
+    .cart-item-price {
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .cart-item-qty {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 0.4rem;
+    }
+
+    .qty-btn {
+      width: 26px; height: 26px;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      background: transparent;
+      color: var(--gold);
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qty-btn:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .remove-item {
+      background: none;
+      border: none;
+      color: #ff6b6b;
+      font-size: 0.8rem;
+      cursor: pointer;
+      margin-top: 0.3rem;
+    }
+
+    .cart-footer {
+      padding: 1.25rem 1.5rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.15);
+    }
+
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.15rem;
+      margin-bottom: 1.25rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .cart-total span:last-child {
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    .btn-whatsapp {
+      width: 100%;
+      padding: 1rem;
+      background: #25D366;
+      color: white;
+      border: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      transition: all 0.3s;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, transparent 50%);
+      border-top: 1px solid rgba(212, 175, 55, 0.1);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      color: var(--gold);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+
+    .cta p {
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 2rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+    }
+
+    footer {
+      background: var(--black-soft);
+      padding: 3.5rem 1.25rem 2rem;
+      border-top: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    .footer-brand .logo-text {
+      font-family: 'Cinzel', serif;
+      font-size: 1.7rem;
+      margin-bottom: 1rem;
+      display: block;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+      font-weight: 600;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.9;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .footer-col h4 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--gold);
+      font-size: 1.15rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.5rem; }
+
+    .footer-col a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 2.5rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .mobile-nav {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: var(--black);
+      z-index: 1500;
+      transform: translateX(-100%);
+      transition: transform 0.35s;
+      padding: 5rem 2rem 2rem;
+    }
+
+    .mobile-nav.open { transform: translateX(0); }
+    .mobile-nav ul { list-style: none; }
+    .mobile-nav li { margin-bottom: 1.5rem; }
+
+    .mobile-nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.1em;
+    }
+
+    .mobile-nav a:hover { color: var(--gold); }
+
+    .close-menu {
+      position: absolute;
+      top: 1.25rem; right: 1.25rem;
+      background: none;
+      border: none;
+      color: var(--gold);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--gold);
+      color: var(--black);
+      padding: 0.85rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      z-index: 3000;
+      opacity: 0;
+      transition: all 0.35s;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 900px) {
+      .categories { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .nav-links { display: none; }
+      .menu-toggle { display: block; }
+    }
+
+    @media (max-width: 600px) {
+      .hero { min-height: 90vh; padding-top: 5rem; }
+      .logo img { height: 42px; width: 42px; }
+      .logo-text { font-size: 1.3rem; letter-spacing: 0.12em; }
+      .products-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+      .product-img { height: 180px; }
+      .product-info { padding: 0.9rem; }
+      .product-name { font-size: 1.05rem; }
+      .product-price { font-size: 1rem; }
+      .btn-add { font-size: 0.75rem; padding: 0.55rem; }
+      .cart-sidebar { max-width: 100%; }
+      .hero-logo { width: 110px; height: 110px; }
+    }
+
+    @media (max-width: 400px) {
+      .products-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="https://i.postimg.cc/y8t32snr/788240271-17955729750216800-8651954019654374026-n.jpg" alt="ASSORA Logo">
+        <span class="logo-text">ASSORA ✦</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="openCart" aria-label="Cart">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-menu" id="closeMenu">×</button>
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#products" class="mobile-link">Products</a></li>
+      <li><a href="#collections" class="mobile-link">Collections</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <img src="https://i.postimg.cc/y8t32snr/788240271-17955729750216800-8651954019654374026-n.jpg" alt="ASSORA" class="hero-logo">
+      <h1>ASSORA ✦</h1>
+      <p class="tagline">Accessories • Style • Elegance</p>
+      <a href="#products" class="btn">Discover the Collection</a>
+    </div>
+  </section>
+
+  <section id="collections">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Collections</h2>
+        <div class="divider"></div>
+        <p>Watches • Necklaces • Rings</p>
+      </div>
+      <div class="categories">
+        <div class="category-card" data-filter="watches">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="Watches">
+          <div class="category-overlay"><h3>Watches</h3></div>
+        </div>
+        <div class="category-card" data-filter="necklaces">
+          <img src="https://i.postimg.cc/pL453RkG/Gemini-Generated-Image-wtq6mpwtq6mpwtq6.jpg" alt="Necklaces">
+          <div class="category-overlay"><h3>Necklaces</h3></div>
+        </div>
+        <div class="category-card" data-filter="rings">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80" alt="Rings">
+          <div class="category-overlay"><h3>Rings</h3></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Products</h2>
+        <div class="divider"></div>
+        <p>Exclusive gold & black selection</p>
+      </div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="watches">Watches</button>
+        <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+        <button class="filter-btn" data-filter="rings">Rings</button>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="container">
+      <h2>Order Now</h2>
+      <p>Add your favorite pieces to the cart and complete your order directly on WhatsApp. Fast delivery all over Morocco 🇲🇦</p>
+      <a href="https://wa.me/212602580640" target="_blank" class="btn">Contact on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">ASSORA ✦</span>
+        <p>
+          Accessories • Style • Elegance<br>
+          ✨ Details that make the difference<br>
+          🚚 Delivery all over Morocco<br>
+          📩 Order via DM
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/212602580640" target="_blank">WhatsApp: +212 602 580 640</a></li>
+          <li><a href="https://www.instagram.com/accessories_assora/" target="_blank">Instagram: @accessories_assora</a></li>
+          <li><a href="#">Delivery in Morocco</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 ASSORA ✦ — All rights reserved
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="closeCart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">Your cart is empty</div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">0 MAD</span>
+      </div>
+      <button class="btn-whatsapp" id="checkoutBtn" disabled>Order via WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Added to cart ✓</div>
+
+  <script>
+    const products = [
+      { id: 1, name: "Classic Gold Watch", category: "watches", price: 450, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80", badge: "Best Seller" },
+      { id: 2, name: "Minimalist Black & Gold Watch", category: "watches", price: 380, image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500&q=80", badge: null },
+      { id: 3, name: "Luxury Chronograph Watch", category: "watches", price: 520, image: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=500&q=80", badge: "New" },
+      { id: 4, name: "Lion Pendant Necklace", category: "necklaces", price: 220, image: "https://i.postimg.cc/pL453RkG/Gemini-Generated-Image-wtq6mpwtq6mpwtq6.jpg", badge: "Popular" },
+      { id: 5, name: "Cuban Chain Gold", category: "necklaces", price: 280, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&q=80", badge: null },
+      { id: 6, name: "Vintage Medallion Necklace", category: "necklaces", price: 195, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&q=80", badge: null },
+      { id: 7, name: "Gold Signet Ring", category: "rings", price: 180, image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&q=80", badge: "Best Seller" },
+      { id: 8, name: "Elegant Slim Ring", category: "rings", price: 140, image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=500&q=80", badge: null },
+      { id: 9, name: "Gold Trio Ring Set", category: "rings", price: 250, image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&q=80", badge: "New" }
+    ];
+
+    let cart = [];
+
+    function renderProducts(filter = 'all') {
+      const grid = document.getElementById('productsGrid');
+      const filtered = filter === 'all' ? products : products.filter(p => p.category === filter);
+      grid.innerHTML = filtered.map(p => `
+        <div class="product-card" data-category="${p.category}">
+          <div class="product-img">
+            <img src="${p.image}" alt="${p.name}" loading="lazy">
+            ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
+          </div>
+          <div class="product-info">
+            <div class="product-category">${p.category.charAt(0).toUpperCase() + p.category.slice(1)}</div>
+            <h3 class="product-name">${p.name}</h3>
+            <div class="product-price">${p.price} MAD</div>
+            <div class="product-actions">
+              <button class="btn-add" onclick="addToCart(${p.id})">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function saveCart() { updateCartUI(); }
+
+    function addToCart(id) {
+      const product = products.find(p => p.id === id);
+      if (!product) return;
+      const existing = cart.find(item => item.id === id);
+      if (existing) existing.qty += 1;
+      else cart.push({ ...product, qty: 1 });
+      saveCart();
+      showToast(`${product.name} added ✓`);
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      saveCart();
+    }
+
+    function updateQty(id, delta) {
+      const item = cart.find(i => i.id === id);
+      if (!item) return;
+      item.qty += delta;
+      if (item.qty <= 0) removeFromCart(id);
+      else saveCart();
+    }
+
+    function updateCartUI() {
+      const countEl = document.getElementById('cartCount');
+      const itemsEl = document.getElementById('cartItems');
+      const totalEl = document.getElementById('cartTotal');
+      const checkoutBtn = document.getElementById('checkoutBtn');
+      const totalCount = cart.reduce((sum, i) => sum + i.qty, 0);
+      const totalPrice = cart.reduce((sum, i) => sum + (i.price * i.qty), 0);
+      countEl.textContent = totalCount;
+
+      if (cart.length === 0) {
+        itemsEl.innerHTML = '<div class="cart-empty">Your cart is empty</div>';
+        checkoutBtn.disabled = true;
+      } else {
+        itemsEl.innerHTML = cart.map(item => `
+          <div class="cart-item">
+            <img src="${item.image}" alt="${item.name}">
+            <div class="cart-item-info">
+              <div class="cart-item-name">${item.name}</div>
+              <div class="cart-item-price">${item.price} MAD</div>
+              <div class="cart-item-qty">
+                <button class="qty-btn" onclick="updateQty(${item.id}, -1)">−</button>
+                <span>${item.qty}</span>
+                <button class="qty-btn" onclick="updateQty(${item.id}, 1)">+</button>
+              </div>
+              <button class="remove-item" onclick="removeFromCart(${item.id})">Remove</button>
+            </div>
+          </div>
+        `).join('');
+        checkoutBtn.disabled = false;
+      }
+      totalEl.textContent = `${totalPrice} MAD`;
+    }
+
+    function checkoutWhatsApp() {
+      if (cart.length === 0) return;
+      let message = `✨ *New Order - ASSORA ✦*%0A%0AHello, I would like to order:%0A%0A`;
+      cart.forEach((item, index) => {
+        message += `${index + 1}. *${item.name}*%0A   Quantity: ${item.qty}%0A   Price: ${item.price} MAD × ${item.qty} = ${item.price * item.qty} MAD%0A%0A`;
+      });
+      const total = cart.reduce((sum, i) => sum + (i.price * i.qty), 0);
+      message += `────────────────%0A*Total: ${total} MAD*%0A%0ADelivery in Morocco 🇲🇦%0AThank you!`;
+      window.open(`https://wa.me/212602580640?text=${message}`, '_blank');
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById('toast');
+      toast.textContent = text;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    }
+
+    document.getElementById('openCart').addEventListener('click', () => {
+      document.getElementById('cartSidebar').classList.add('open');
+      document.getElementById('cartOverlay').classList.add('open');
+    });
+    document.getElementById('closeCart').addEventListener('click', closeCart);
+    document.getElementById('cartOverlay').addEventListener('click', closeCart);
+    function closeCart() {
+      document.getElementById('cartSidebar').classList.remove('open');
+      document.getElementById('cartOverlay').classList.remove('open');
+    }
+    document.getElementById('checkoutBtn').addEventListener('click', checkoutWhatsApp);
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        renderProducts(btn.dataset.filter);
+      });
+    });
+
+    document.querySelectorAll('.category-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const filter = card.dataset.filter;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === filter));
+        renderProducts(filter);
+        document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    document.getElementById('menuToggle').addEventListener('click', () => document.getElementById('mobileNav').classList.add('open'));
+    document.getElementById('closeMenu').addEventListener('click', () => document.getElementById('mobileNav').classList.remove('open'));
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => document.getElementById('mobileNav').classList.remove('open'));
+    });
+
+    renderProducts();
+    updateCartUI();
+  </script>
+</body>
+</html>
