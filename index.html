@@ -849,20 +849,20 @@
       <div class="section-header">
         <h2>Our Collections</h2>
         <div class="divider"></div>
-        <p>Watches • Necklaces • Rings</p>
+        <p>Elegant Necklaces Collection</p>
       </div>
       <div class="categories">
-        <div class="category-card" data-filter="watches">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80" alt="Watches">
-          <div class="category-overlay"><h3>Watches</h3></div>
+        <div class="category-card" data-filter="necklaces">
+          <img src="https://i.postimg.cc/wvtVJFv1/Whats-App-Image-2026-09-02-at-21-32-44.jpg" alt="Azura">
+          <div class="category-overlay"><h3>Azura</h3></div>
         </div>
         <div class="category-card" data-filter="necklaces">
-          <img src="https://i.postimg.cc/pL453RkG/Gemini-Generated-Image-wtq6mpwtq6mpwtq6.jpg" alt="Necklaces">
-          <div class="category-overlay"><h3>Necklaces</h3></div>
+          <img src="https://i.postimg.cc/Y943g89Q/Whats-App-Image-2026-09-02-at-21-56-07.jpg" alt="Onyx">
+          <div class="category-overlay"><h3>Onyx</h3></div>
         </div>
-        <div class="category-card" data-filter="rings">
-          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80" alt="Rings">
-          <div class="category-overlay"><h3>Rings</h3></div>
+        <div class="category-card" data-filter="necklaces">
+          <img src="https://i.postimg.cc/Z5r4Nt9L/Whats-App-Image-2026-09-05-at-17-05-16.jpg" alt="Gold Rose Vine">
+          <div class="category-overlay"><h3>Gold Rose</h3></div>
         </div>
       </div>
     </div>
@@ -873,13 +873,11 @@
       <div class="section-header">
         <h2>Our Products</h2>
         <div class="divider"></div>
-        <p>Exclusive gold & black selection</p>
+        <p>Handpicked elegant necklaces — 69 MAD</p>
       </div>
       <div class="filters">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="watches">Watches</button>
         <button class="filter-btn" data-filter="necklaces">Necklaces</button>
-        <button class="filter-btn" data-filter="rings">Rings</button>
       </div>
       <div class="products-grid" id="productsGrid"></div>
     </div>
@@ -949,15 +947,17 @@
 
   <script>
     const products = [
-      { id: 1, name: "Classic Gold Watch", category: "watches", price: 450, image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80", badge: "Best Seller" },
-      { id: 2, name: "Minimalist Black & Gold Watch", category: "watches", price: 380, image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500&q=80", badge: null },
-      { id: 3, name: "Luxury Chronograph Watch", category: "watches", price: 520, image: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=500&q=80", badge: "New" },
-      { id: 4, name: "Lion Pendant Necklace", category: "necklaces", price: 220, image: "https://i.postimg.cc/pL453RkG/Gemini-Generated-Image-wtq6mpwtq6mpwtq6.jpg", badge: "Popular" },
-      { id: 5, name: "Cuban Chain Gold", category: "necklaces", price: 280, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&q=80", badge: null },
-      { id: 6, name: "Vintage Medallion Necklace", category: "necklaces", price: 195, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&q=80", badge: null },
-      { id: 7, name: "Gold Signet Ring", category: "rings", price: 180, image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&q=80", badge: "Best Seller" },
-      { id: 8, name: "Elegant Slim Ring", category: "rings", price: 140, image: "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=500&q=80", badge: null },
-      { id: 9, name: "Gold Trio Ring Set", category: "rings", price: 250, image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=500&q=80", badge: "New" }
+      { id: 1, name: "Azura Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/wvtVJFv1/Whats-App-Image-2026-09-02-at-21-32-44.jpg", badge: null },
+      { id: 2, name: "Léora Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/ZR9c3jRy/Whats-App-Image-2026-09-02-at-21-32-53.jpg", badge: null },
+      { id: 3, name: "Onyx Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/Y943g89Q/Whats-App-Image-2026-09-02-at-21-56-07.jpg", badge: null },
+      { id: 4, name: "Élise Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/HxJ253xw/Whats-App-Image-2026-09-02-at-22-00-38.jpg", badge: null },
+      { id: 5, name: "Silvère Chain", category: "necklaces", price: 69, image: "https://i.postimg.cc/prNsz75n/Gemini-Generated-Image-lh0cfzlh0cfzlh0c.jpg", badge: null },
+      { id: 6, name: "Aurelius Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/NFhdmV2X/Gemini-Generated-Image-k53o3mk53o3mk53o.jpg", badge: null },
+      { id: 7, name: "Black Oval", category: "necklaces", price: 69, image: "https://i.postimg.cc/yxqLc536/Gemini-Generated-Image-yfy6c7yfy6c7yfy6.jpg", badge: null },
+      { id: 8, name: "Octagon Pendant Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/85FHWw5j/Whats-App-Image-2026-08-31-at-23-22-13-(1).jpg", badge: null },
+      { id: 9, name: "Noir Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/3RyBp9Rp/Whats-App-Image-2026-09-02-at-21-33-14.jpg", badge: null },
+      { id: 10, name: "Sélène Necklace", category: "necklaces", price: 69, image: "https://i.postimg.cc/QtBb5St7/Whats-App-Image-2026-09-02-at-21-33-02.jpg", badge: null },
+      { id: 11, name: "Gold Rose Vine", category: "necklaces", price: 69, image: "https://i.postimg.cc/Z5r4Nt9L/Whats-App-Image-2026-09-05-at-17-05-16.jpg", badge: "New" }
     ];
 
     let cart = [];
